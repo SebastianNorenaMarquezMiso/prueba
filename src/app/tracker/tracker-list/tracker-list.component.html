@@ -1,0 +1,48 @@
+<div class="jumbotron text-center section-header">
+  <span class="title_header">IP Address Tracker</span>
+  <div id="custom-search-input">
+    <form
+    [formGroup]="trackerForm"
+    (ngSubmit)="search(trackerForm.value)"
+  >
+    <div class="input-group col-md-12">
+        <input type="text" class="form-control input-lg" id="ip" name="ip" formControlName="ip" placeholder="Buscar" />
+        <span class="input-group-btn">
+            <button class="btn btn-secondary btn-lg" type="submit">
+                >
+            </button>
+        </span>
+    </div>
+    </form>
+  </div>
+</div>
+
+<div class="container menu" *ngIf="tracker">
+  <div class="row">
+    <div class="col-lg-3 col-md-3 col-xs-12">
+      <span class="title">IP ADDRESS</span>
+      <p class="content">{{tracker.ip}}</p>
+    </div>
+    <div class="col-lg-3 col-md-3 col-xs-12">
+      <span  class="title">LOCATION</span>
+      <p class="content">{{tracker.location.region}},{{tracker.location.city}},{{tracker.location.postalCode}}</p>
+    </div>
+    <div class="col-lg-3 col-md-3 col-xs-12">
+      <span  class="title">TIMEZONE</span>
+      <p class="content">{{tracker.location.timezone}}</p>
+    </div>
+    <div class="col-lg-3 col-md-3 col-xs-12">
+      <span  class="title">ISP</span>
+      <p class="content">{{tracker.isp}}</p>
+    </div>
+  </div>
+</div>
+
+
+    <div class="row map-container" >
+      <div class="col-lg-12 col-md-12 col-xs-12 map-frame">
+        <div     id="map"></div>
+      </div>
+    </div>
+
+

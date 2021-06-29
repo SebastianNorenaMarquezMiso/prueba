@@ -1,0 +1,96 @@
+html {
+  font-size: 18px;
+ }
+
+.menu {
+  margin-top: -8%;
+  padding: 20px 15px;
+  border: 0;
+  z-index: 999;
+  background-color: #fff;
+  border-radius: 8px;
+  text-align: center;
+  position: absolute;
+    left: 8%;
+}
+
+.section-header {
+  background-image: url("/assets/pattern-bg.png");
+}
+.title
+{
+  color: #969696;
+  font-size: 11px;
+  font-weight: bold;
+}
+.content
+{
+  color: #000000;
+  font-weight: bold;
+  font-size: 22px;
+}
+.title_header
+{
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 22px;
+}
+#custom-search-input{
+  border-radius: 26px;
+  background-color: #FFFFFF;
+}
+
+#custom-search-input input{
+  border: 0;
+  box-shadow: none;
+}
+
+#custom-search-input button{
+  margin: 2px 0 0 0;
+  background: none;
+  box-shadow: none;
+  border: 0;
+  color: #FFFFFF;
+
+}
+
+#custom-search-input
+{
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+#custom-search-input button:hover{
+  border: 0;
+  box-shadow: none;
+
+}
+.input-group-btn
+{
+  background-color: black;
+  color: #FFFFFF;
+  position: relative;
+  left: 30px;
+  border-radius: 0px 20px 20px 0px;
+}
+
+#custom-search-input .glyphicon-search{
+  font-size: 23px;
+}
+
+.map-container {
+
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 30px;
+  height: 400px;
+}
+
+
+
+#map {
+  height: 100%;
+}
